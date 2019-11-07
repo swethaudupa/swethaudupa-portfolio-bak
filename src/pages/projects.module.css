@@ -1,0 +1,37 @@
+@import "../app.css";
+
+.portfolioMainWrapper {
+  width: 100%;
+}
+
+.portfolioMainWrapper > div:nth-child(odd) > div {
+  flex-direction: row-reverse;
+}
+
+.mainPortfolioHeaderTitle {
+  font-family: "Oswald", "Open Sans", sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-size: 3.625rem;
+  line-height: 1.1;
+  color: var(--title-color);
+  margin-top: 0;
+}
+
+.portfolioHeader {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.aboutContainer {
+  margin-top: 2rem;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 480px) {
+  .mainPortfolioHeaderTitle {
+    font-size: 40px;
+    margin: 0px 0px 50px 0px;
+  }
+}

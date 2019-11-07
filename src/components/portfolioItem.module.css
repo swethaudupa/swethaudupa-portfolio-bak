@@ -1,0 +1,115 @@
+@import "../app.css";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.portfolioTitle {
+  font-weight: 600;
+  font-size: 2rem;
+  position: relative;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 3.5rem;
+  color: var(--title-color);
+  transition: color 0.2s ease-out;
+}
+
+.portfolioTitle:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: rotate(-2deg);
+  background: var(--title-bg-color);
+}
+
+.portfolioContent {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.portfolioText {
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin: 10px 0px 10px 0px;
+  color: var(--title-color);
+}
+
+.stack {
+  color: var(--stack-text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  transition: color 0.2s ease-out;
+}
+
+.buttonWrapper {
+  display: flex;
+}
+
+.portfolioButtons {
+  display: block;
+  width: 115px;
+  height: 34px;
+  background: var(--button-bg-color);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--button-color);
+}
+
+.portfolioButtons:hover {
+  background-color: var(--button-color);
+  color: var(--button-bg-color);
+}
+
+.portfolioButtons:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.portFolioIcon {
+  color: inherit;
+  margin-right: 0.5rem;
+}
+
+.portFolioImage {
+  margin: 0 2rem;
+  flex: 1 1 50%;
+}
+
+.snIcon {
+  width: 20px;
+  height: auto;
+  margin-right: 1rem;
+  fill: rgba(255, 255, 255, 1);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+  .portFolioImage {
+    display: none;
+  }
+}

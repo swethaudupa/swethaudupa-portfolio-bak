@@ -1,0 +1,208 @@
+@import "../app.css";
+/***
+Overlay(background)
+***/
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 3;
+  left: 0;
+  top: 11%;
+  background-color: var(--overlay-bg-color); /* Black fallback color */
+  opacity: 0.9;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  -webkit-transition: 0.5s;
+}
+/***
+Links
+***/
+.menuContainer {
+  display: block;
+  float: left;
+  width: 60%;
+  margin: 4.5rem 0 0 4.5rem;
+}
+.overlayContent {
+  z-index: 4;
+}
+
+.link {
+  display: block;
+  margin: 2rem 0 1rem 2rem;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--overlay-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  cursor: pointer;
+}
+
+.link p {
+  font-family: "Oswald";
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--overlay-color);;
+}
+
+.link.active p {
+  color: var(--overlay-color);;
+  margin: 0;
+}
+
+.link.inactive p {
+  margin: 0;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .link p {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .link {
+    margin: 0.5rem 0 1rem 2rem;
+  }
+
+  .menuContainer {
+    width: 70%;
+    margin: 2.5rem 0 0 2.5rem;
+  }
+
+  .link p {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+  }
+
+  .overlay {
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 9%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .link {
+    margin: 1rem 0 1rem 2rem;
+  }
+
+  .menuContainer {
+    width: 80%;
+    margin: 1.5rem 0 0 1rem;
+  }
+
+  .link p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+/***
+Buttons
+***/
+
+.btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.closeIcon:hover {
+  opacity: 0.9;
+}
+.closeIcon {
+  opacity: 0.5;
+  margin: 0;
+
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+/***
+Foot
+***/
+.foot {
+  display: block;
+}
+.snContainer {
+  position: relative;
+  display: block;
+  width: 9rem;
+  margin: 1rem 0 0 2.7rem;
+}
+.snList {
+  display: inline;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+}
+
+.snList li {
+  display: inherit;
+}
+
+.snIcon {
+  width: 20px;
+  height: auto;
+  margin-right: 1rem;
+  fill: var(--social-icon-color);
+  opacity: 0.5;
+}
+
+.snIcon:hover {
+  fill: var(--social-icon-color);
+  opacity: 0.9;
+}
+.signWhite {
+  display: block;
+  height: 2.5rem;
+  margin: 2rem 1rem 0 1.7rem;
+  opacity: 0.6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 490px) {
+  .signWhite {
+    display: block;
+    height: 2.5rem;
+    margin: 1.3rem 1rem 0 1.7rem;
+    opacity: 0.6;
+  }
+  .snContainer {
+    margin: 0.8rem 0 0 2.7rem;
+  }
+}

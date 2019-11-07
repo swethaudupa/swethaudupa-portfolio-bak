@@ -1,0 +1,19 @@
+:root {
+  --main-bg-color: #F3D250;
+  --secondary-bg-color: #90CCF4;
+  --tertiary-bg-color: #F78888;
+  --title-color: #131212;
+  --title-bg-color: #ECECEC;
+  --description-color: #131212;
+  --header-color: #ECECEC;
+  --header-text-color: #131212;
+  --header-divider: #5DA2D5;
+  --social-icon-color: #131212;
+  --button-color: #ECECEC;
+  --button-bg-color: #5DA2D5;
+  --footer-text-color: #131212;
+  --nav-logo-text: #131212;
+  --stack-text-color: #131212;
+  --overlay-bg-color: #1a1a1d;
+  --overlay-color:#ECECEC
+}

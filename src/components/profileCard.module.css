@@ -1,0 +1,95 @@
+.photo {
+  position: absolute;
+  top: 40%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.photo .avatar {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 50px;
+
+  background-image: url("https://i.ibb.co/SsDfdkm/2019-11-02-005321-0.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  object-fit: cover;
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover .avatar {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.photo .glowWrap {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow {
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .avatar,
+.photo:hover .glowWrap {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .photo .avatar {
+    width: 8rem;
+    height: 10rem;
+    border-radius: 50%;
+  
+    background-image: url("https://i.ibb.co/SsDfdkm/2019-11-02-005321-0.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  
+    object-fit: cover;
+    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+    display: block;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: -10px;
+  }
+
+  .photo {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .photo {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+  }
+}
+ 
+
+/* Ends */

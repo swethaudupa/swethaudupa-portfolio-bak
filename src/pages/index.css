@@ -1,0 +1,41 @@
+@import "../app.css";
+
+html {
+  background-image: linear-gradient(
+    140deg,
+    var(--main-bg-color),
+    var(--secondary-bg-color) 40%,
+    var(--tertiary-bg-color)
+  )
+}
+
+body {
+  background: url("http://scarbroughstudios.com/img/codepen.svg");
+  background-position: center center;
+  background-size: 500px;
+  -webkit-animation: scrollBad 5s linear infinite;
+  animation: scrollSlow 5s linear infinite;
+}
+
+@keyframes scrollSlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+
+#___gatsby {
+  height: 100%;
+}
+
+.profileWrapper {
+  min-width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: 300px
+  }
+}
