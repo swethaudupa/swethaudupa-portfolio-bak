@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 
 const PortfolioItem = ({ portfolio }) => {
-  const { title, live, source, stack, image } = portfolio && portfolio.frontmatter;
+  const { title, link, stack, image } = portfolio && portfolio.frontmatter;
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.portfolioTitle}>{title}</h2>
@@ -13,15 +13,12 @@ const PortfolioItem = ({ portfolio }) => {
           <div className={styles.portfolioText}>{portfolio.rawMarkdownBody}</div>
           <p className= {styles.stack}>{stack}</p>
           <div className= {styles.buttonWrapper}>
-            <a style = {{ marginRight: "16px"}} className = {styles.portfolioButtons} target="_blank" solid href={live} rel="noreferrer">
-              Visit
-            </a>
-            <a className = {styles.portfolioButtons}  target="_blank" href={source} rel="noreferrer">
+            <a style = {{ marginRight: "16px"}} className = {styles.buttonStyle} target="_blank" solid href={link ? link : "#"} rel="noreferrer">
               Source
             </a>
           </div>
         </div>
-        <Img className= {styles.portFolioImage} fluid={image.childImageSharp.fluid} />
+        <Img className= {styles.portFolioImage} fluid={image && image.childImageSharp.fluid} />
       </div>
     </div>
   );

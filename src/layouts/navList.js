@@ -63,13 +63,19 @@ export default props => (
       <ListDivider>
         <h4 className={styles.navDivider}>|</h4>
       </ListDivider>
+      <ListLink to="/about/" path={props.path}>
+        <h4 className={styles.navItem}>About me</h4>
+      </ListLink>
+      <ListDivider>
+        <h4 className={styles.navDivider}>|</h4>
+      </ListDivider>
       <ListLink to="/projects/" path={props.path}>
         <h4 className={styles.navItem}>Projects</h4>
       </ListLink>
       <ListDivider>
         <h4 className={styles.navDivider}>|</h4>
       </ListDivider>
-      <ListLinkOut to="https://drive.google.com/file/d/1m9z3324qaDx79yVed04EmM-oQ1Fqm-nQ/view?usp=sharing" path={props.path}>
+      <ListLinkOut to="https://drive.google.com/file/d/1QIJaEDRiV5e5D4Ws7VJ1DEYNRwbKqjFA/view?usp=sharing" path={props.path}>
         <h4 className={styles.navItem}>C.V.</h4>
       </ListLinkOut>
     </FadeIn>

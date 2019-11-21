@@ -12,7 +12,7 @@ const Projects = () => {
     query {
       allFile(
         filter: { extension: { eq: "md" } }
-        sort: { fields: [dir], order: DESC }
+        sort: { fields: [dir], order: ASC }
       ) {
         edges {
           node {
@@ -21,8 +21,7 @@ const Projects = () => {
               rawMarkdownBody
               frontmatter {
                 title
-                live
-                source
+                link
                 stack
                 image {
                   childImageSharp {

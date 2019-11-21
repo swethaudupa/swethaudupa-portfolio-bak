@@ -15,5 +15,8 @@
   --nav-logo-text: #131212;
   --stack-text-color: #131212;
   --overlay-bg-color: #1a1a1d;
-  --overlay-color:#ECECEC
+  --overlay-color:#ECECEC;
+  --delay: 0;
+	--duration: 800ms;
+	--iterations: 1;
 }

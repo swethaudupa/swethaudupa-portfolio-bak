@@ -79,6 +79,13 @@ class Collapse extends Component {
                 Home
               </ListLink>
               <ListLink
+                to="/about/"
+                path={this.props.path}
+                onClick={() => this.closeMenu()}
+              >
+                About
+              </ListLink>
+              <ListLink
                 to="/projects/"
                 path={this.props.path}
                 onClick={() => this.closeMenu()}
@@ -86,7 +93,7 @@ class Collapse extends Component {
                 Projects
               </ListLink>
               <ListLinkOut
-                to="https://drive.google.com/file/d/1m9z3324qaDx79yVed04EmM-oQ1Fqm-nQ/view?usp=sharing"
+                to="https://drive.google.com/file/d/1QIJaEDRiV5e5D4Ws7VJ1DEYNRwbKqjFA/view?usp=sharing"
                 path={this.props.path}
                 onClick={() => this.closeMenu()}
               >
