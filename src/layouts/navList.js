@@ -75,7 +75,7 @@ export default props => (
       <ListDivider>
         <h4 className={styles.navDivider}>|</h4>
       </ListDivider>
-      <ListLinkOut to="https://drive.google.com/file/d/1QIJaEDRiV5e5D4Ws7VJ1DEYNRwbKqjFA/view?usp=sharing" path={props.path}>
+      <ListLinkOut to="https://drive.google.com/file/d/1FbNeW-DmRYbjlrYv_2EPSxMNqiuWcvcq/view?usp=sharing" path={props.path}>
         <h4 className={styles.navItem}>C.V.</h4>
       </ListLinkOut>
     </FadeIn>
