@@ -14,7 +14,7 @@ body {
   background: url("../assets/images/tech_bg.svg");
   background-position: center center;
   background-size: 500px;
-  -webkit-animation: scrollBad 5s linear infinite;
+  -webkit-animation: scrollSlow 5s linear infinite;
   animation: scrollSlow 5s linear infinite;
   min-height: 100vh;
   overflow: hidden;
@@ -113,7 +113,7 @@ body {
     0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 10px;
-  text-shadow: 1px 1px 1px var(--title-color)
+  text-shadow: 1px 1px 1px var(--title-color);
 }
 
 .coverStyle {
@@ -159,6 +159,14 @@ body {
 @media screen and (max-width: 1200px) {
   body {
     background-size: 300px;
+  }
+  @keyframes scrollSlow {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -190px;
+    }
   }
 }
 
