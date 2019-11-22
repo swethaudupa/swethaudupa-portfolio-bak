@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 480px) {
   .aboutText {
-    text-align: center;
+    text-align: left;
   }
   .title {
     font-size: 40px;

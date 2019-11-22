@@ -86,7 +86,7 @@
 @media screen and (max-width: 480px) {
   .photo {
     position: absolute;
-    top: 16%;
+    top: 18%;
     left: 50%;
   }
 }
