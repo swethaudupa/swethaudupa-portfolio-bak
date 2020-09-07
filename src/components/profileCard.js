@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./profileCard.module.css"
-import profilePicture from "../assets/dp.jpg";
+import profilePicture from "../assets/images/dp.jpg";
 
 const ProfileCard = () => (
   <div className={styles.photo}>

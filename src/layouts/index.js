@@ -114,7 +114,7 @@ class Layout extends Component {
               <footer>
                 <div className={styles.footerContainer}>
                   <h6 className={styles.footerContent}>
-                    2019{" "}
+                    2020{" "}
                     {this.props.data
                       ? this.props.data.site.siteMetadata.author
                       : "@ Swetha Udupa"}
