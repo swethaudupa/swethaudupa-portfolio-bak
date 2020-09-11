@@ -92,13 +92,6 @@ class Collapse extends Component {
               >
                 Projects
               </ListLink>
-              <ListLinkOut
-                to="https://drive.google.com/file/d/1ouoyZnhmx3sFsWFnGaUuSWJjQYj17cqL/view?usp=sharing"
-                path={this.props.path}
-                onClick={() => this.closeMenu()}
-              >
-                C.V.
-              </ListLinkOut>
             </div>
           </div>
         </div>
